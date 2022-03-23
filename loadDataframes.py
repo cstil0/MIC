@@ -4,7 +4,9 @@ import pandas as pd
 import numpy as np
 
 class Dataframes:
-    def __init__(self):
+    def __init__(self, path):
+        self.excelPath = path
+
         self.vmixRaw = None
         self.dataRaw = None
         self.cabezaSerie = None
@@ -136,7 +138,7 @@ class Dataframes:
 
     # -- Export Datfaframes --
     def saveDataframe(self):
-        with pd.ExcelWriter('Y:CATEGORIA 0_VMIX.xlsx') as writer:
+        with pd.ExcelWriter(self.excelPath) as writer:
             self.vmixRaw.to_excel(writer, sheet_name='VMIX')
             self.dataRaw.to_excel(writer, sheet_name='DADES')
 

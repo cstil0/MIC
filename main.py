@@ -5,11 +5,8 @@ from loadDataframes import Dataframes
 import GUI
 
 if __name__ == '__main__':
-    #C:\Users\HVPC21\PycharmProjects\MIC
-    print(os.listdir('Y:'))
-    #print(os.listdir("\\Hvpc14-repes2"))
     excel_path = 'Y:CATEGORIA 0_VMIX.xlsx'
-    dataframes = Dataframes()
+    dataframes = Dataframes(excel_path)
     #df_VMIX, df_DADES = Dataframes.loadExcel(dataframes, excel_path)
 
     col_num = 4
