@@ -9,6 +9,7 @@ if __name__ == '__main__':
     dataframes = Dataframes(excel_path)
     #df_VMIX, df_DADES = Dataframes.loadExcel(dataframes, excel_path)
 
+    # Fila on estàn els noms de les columnes
     col_num = 4
     # Per si en algun moment torna a fer falta
     #cabeza_serie_num, bombo1_num, bombo2_num, bombo3_num = GUI.inputGroups()

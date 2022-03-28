@@ -126,6 +126,7 @@ class Dataframes:
             del self.vmixRaw['Unnamed: 0']
         print(self.vmixRaw)
 
+        # Agafem els noms de les columnes per concatenar-ho
         col_names = self.getColNames(self.dataRaw, col_num)
         # Això ja no fa falta
         #df_categoria_A1 = self.createCategoriaA1(self.dataRaw, col_num, col_names)
